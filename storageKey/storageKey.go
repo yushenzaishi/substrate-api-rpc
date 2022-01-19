@@ -54,6 +54,7 @@ func EncodeStorageKey(section, method string, args ...string) (storageKey Storag
 		hash = append(hash, param[:]...)
 	}
 	storageKey.EncodeKey = util.BytesToHex(hash)
+
 	return
 }
 
